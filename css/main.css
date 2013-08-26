@@ -188,6 +188,10 @@ footer {
     text-align: center;
 }
 
+img.logo {
+    width: 250px;
+}
+
 @media print, screen and (max-width: 960px) {
 
   div.wrapper {
