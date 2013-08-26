@@ -4,6 +4,7 @@ projects:
     - { name: Geocoder,                 description: Geocoder }
     - { name: BazingaGeocoderBundle,    description: GeocoderBundle (Symfony2) }
     - { name: GeocoderModule,           description: GeocoderModule (ZF2) }
+    - { name: GeocodableBehavior,       description: GeocodableBehavior (Propel) }
 ---
 
 Geocoder
@@ -48,6 +49,7 @@ Documentation
 Here are the links to the official and complete documentation pages:
 
 * [Geocoder documentation]({{ site.url }}Geocoder)
+* [GeocodableBehavior documentation (Propel)]({{ site.url }}GeocodableBehavior)
 * [GeocoderBundle documentation (Symfony2)]({{ site.github_base_url }}BazingaGeocoderBundle/blob/master/Resources/doc/index.md#bazingageocoderbundle)
 
 
