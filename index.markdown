@@ -48,7 +48,7 @@ Documentation
 Here are the links to the official and complete documentation pages:
 
 * [Geocoder documentation]({{ site.url }}Geocoder)
-* [GeocoderBundle documentation]({{ site.github_base_url }}BazingaGeocoderBundle/blob/master/Resources/doc/index.md#bazingageocoderbundle)
+* [GeocoderBundle documentation (Symfony2)]({{ site.github_base_url }}BazingaGeocoderBundle/blob/master/Resources/doc/index.md#bazingageocoderbundle)
 
 
 License
