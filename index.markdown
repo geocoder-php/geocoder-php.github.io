@@ -53,6 +53,12 @@ Here are the links to the official and complete documentation pages:
 * [GeocoderBundle documentation (Symfony2)]({{ site.github_base_url }}BazingaGeocoderBundle/blob/master/Resources/doc/index.md#bazingageocoderbundle)
 
 
+Cookbook
+--------
+
+In this cookbook, you will find specific solutions for specific needs.
+
+
 License
 -------
 

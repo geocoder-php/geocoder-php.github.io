@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        {% if page.title %}
+        <title>{{ page.title }} | {{ site.name }} - {{ site.description }}</title>
+        {% else %}
+        <title>{{ site.name }} - {{ site.description }}</title>
+        {% endif %}
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/pygment_trac.css">
+        <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <h1>
+                    <a href="/"><img src="/images/geocoder.png" class="logo" /></a>
+                </h1>
+                <p>{{ site.description }}</p>
+
+                <p class="view">
+                    <a href="https://github.com/geocoder-php/Geocoder">View the Project on GitHub <small>geocoder-php/Geocoder</small></a>
+                </p>
+
+                <ul>
+                    <li><a href="{{ site.github_base_url }}{{ site.name }}/zipball/master">Download <strong>ZIP File</strong></a></li>
+                    <li><a href="{{ site.github_base_url }}{{ site.name }}/tarball/master">Download <strong>TAR Ball</strong></a></li>
+                    <li><a href="{{ site.github_base_url }}{{ site.name }}">View On <strong>GitHub</strong></a></li>
+                </ul>
+            </header>
+
+            {{ content }}
+
+            <footer>
+                <p>
+                    This project is maintained by <a href="https://github.com/willdurand">William Durand</a> and
+                    <a href="{{ site.github_base_url }}?tab=members">awesome people</a>.
+                </p>
+                <p>
+                    <small>Hosted on GitHub Pages — Theme by <a href="https://github.com/orderedlist">orderedlist</a></small>
+                </p>
+            </footer>
+        </div>
+        <script src="/js/scale.fix.js"></script>
+        <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+            try {
+                var pageTracker = _gat._getTracker("UA-27331396-1");
+                pageTracker._trackPageview();
+            } catch(err) {}
+        </script>
+    </body>
+</html>
