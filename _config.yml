@@ -1,0 +1,8 @@
+pygments: true
+markdown: redcarpet
+
+name:        Geocoder
+description: The almost missing Geocoder PHP library!
+
+travis_base_url: https://travis-ci.org/geocoder-php/
+github_base_url: https://github.com/geocoder-php/
