@@ -24,13 +24,27 @@
                 <p>{{ site.description }}</p>
 
                 <p class="view">
-                    <a href="https://github.com/geocoder-php/Geocoder">View the Project on GitHub <small>geocoder-php/Geocoder</small></a>
+                    <a href="https://github.com/geocoder-php/{% if page.project_name %}{{ page.project_name }}{% else %}Geocoder{% endif %}">
+                        View the Project on GitHub <small>geocoder-php/{% if page.project_name %}{{ page.project_name }}{% else %}Geocoder{% endif %}</small>
+                    </a>
                 </p>
 
                 <ul>
-                    <li><a href="{{ site.github_base_url }}{{ site.name }}/zipball/master">Download <strong>ZIP File</strong></a></li>
-                    <li><a href="{{ site.github_base_url }}{{ site.name }}/tarball/master">Download <strong>TAR Ball</strong></a></li>
-                    <li><a href="{{ site.github_base_url }}{{ site.name }}">View On <strong>GitHub</strong></a></li>
+                    <li>
+                        <a href="{{ site.github_base_url }}{% if page.project_name %}{{ page.project_name }}{% else %}{{ site.name }}{% endif %}/zipball/master">
+                            Download <strong>ZIP File</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ site.github_base_url }}{% if page.project_name %}{{ page.project_name }}{% else %}{{ site.name }}{% endif %}/tarball/master">
+                            Download <strong>TAR Ball</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ site.github_base_url }}{% if page.project_name %}{{ page.project_name }}{% else %}{{ site.name }}{% endif %}">
+                            View On <strong>GitHub</strong>
+                        </a>
+                    </li>
                 </ul>
             </header>
 
@@ -39,7 +53,9 @@
             <footer>
                 <p>
                     This project is maintained by <a href="https://github.com/willdurand">William Durand</a> and
-                    <a href="{{ site.github_base_url }}?tab=members">awesome people</a>.
+                    <a href="{{ site.github_base_url }}{% if page.project_name %}{{ page.project_name }}/contributors{% else %}?tab=members{% endif %}">
+                        awesome people
+                    </a>.
                 </p>
                 <p>
                     <small>Hosted on GitHub Pages — Theme by <a href="https://github.com/orderedlist">orderedlist</a></small>
