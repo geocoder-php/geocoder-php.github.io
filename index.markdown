@@ -74,18 +74,22 @@ Geocoder ECG (Build Status)
 automatically build our projects, and here are the statuses:
 
 <table width="100%" class="ecg">
-    <tr>
-    {% for project in page.projects %}
-        <th><a href="{{ site.github_base_url }}{{ project.name }}">{{ project.description }}</a></th>
-    {% endfor %}
-    </tr>
-    <tr>
-    {% for project in page.projects %}
-        <td>
-            <a href="{{ site.travis_base_url }}{{ project.name }}">
-                <img src="{{ site.travis_base_url }}{{ project.name }}.png" />
-            </a>
-        </td>
-    {% endfor %}
-    </tr>
+    <thead>
+        <tr>
+        {% for project in page.projects %}
+            <th><a href="{{ site.github_base_url }}{{ project.name }}">{{ project.description }}</a></th>
+        {% endfor %}
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        {% for project in page.projects %}
+            <td>
+                <a href="{{ site.travis_base_url }}{{ project.name }}">
+                    <img src="{{ site.travis_base_url }}{{ project.name }}.png" class="travis-ci" />
+                </a>
+            </td>
+        {% endfor %}
+        </tr>
+    </tbody>
 </table>
