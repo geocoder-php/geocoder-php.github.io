@@ -35,6 +35,7 @@
   td:nth-of-type(2):before { content: "GeocoderBundle (Symfony2)"; }
   td:nth-of-type(3):before { content: "GeocoderModule (ZF2)"; }
   td:nth-of-type(4):before { content: "GeocodableBehavior (Propel)"; }
+  td:nth-of-type(5):before { content: "StackGeoIp"; }
 
   .ecg td {
     text-align: left;

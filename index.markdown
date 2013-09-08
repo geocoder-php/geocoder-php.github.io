@@ -5,6 +5,7 @@ projects:
     - { name: BazingaGeocoderBundle,    description: GeocoderBundle (Symfony2) }
     - { name: GeocoderModule,           description: GeocoderModule (ZF2) }
     - { name: GeocodableBehavior,       description: GeocodableBehavior (Propel) }
+    - { name: StackGeoIp,               description: StackGeoIp }
 ---
 
 Geocoder
