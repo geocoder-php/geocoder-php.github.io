@@ -1,11 +1,13 @@
 ---
 layout: home
 projects:
-    - { name: Geocoder,                 description: Geocoder }
-    - { name: BazingaGeocoderBundle,    description: GeocoderBundle (Symfony2) }
-    - { name: GeocoderModule,           description: GeocoderModule (ZF2) }
-    - { name: GeocodableBehavior,       description: GeocodableBehavior (Propel) }
-    - { name: StackGeoIp,               description: StackGeoIp }
+    -
+        - { name: Geocoder,                 description: Geocoder }
+        - { name: BazingaGeocoderBundle,    description: GeocoderBundle (Symfony2) }
+        - { name: GeocoderModule,           description: GeocoderModule (ZF2) }
+        - { name: GeocodableBehavior,       description: GeocodableBehavior (Propel) }
+    -
+        - { name: StackGeoIp,               description: StackGeoIp }
 ---
 
 Geocoder
@@ -75,17 +77,18 @@ Geocoder ECG (Build Status)
 **Geocoder** is heavily unit tested. We use [Travis-CI](http://travis-ci.org) to
 automatically build our projects, and here are the statuses:
 
-<table width="100%" class="ecg">
+{% for projects in page.projects %}
+<table width="100%" class="ecg projects-{{ forloop.index }}">
     <thead>
         <tr>
-        {% for project in page.projects %}
+        {% for project in projects %}
             <th><a href="{{ site.github_base_url }}{{ project.name }}">{{ project.description }}</a></th>
         {% endfor %}
         </tr>
     </thead>
     <tbody>
         <tr>
-        {% for project in page.projects %}
+        {% for project in projects %}
             <td>
                 <a href="{{ site.travis_base_url }}{{ project.name }}">
                     <img src="{{ site.travis_base_url }}{{ project.name }}.png" class="travis-ci" />
@@ -95,3 +98,4 @@ automatically build our projects, and here are the statuses:
         </tr>
     </tbody>
 </table>
+{% endfor %}
