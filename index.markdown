@@ -8,7 +8,7 @@ projects:
         - { name: GeocodableBehavior,       description: GeocodableBehavior (Propel) }
     -
         - { name: StackGeoIp,               description: StackGeoIp (Stack) }
-        - { name: GeocoderServiceProvider,  description: GeocoderServiceProvider (Silex) }
+        - { name: GeocoderServiceProvider,  description: Geocoder for Silex }
         - { name: GeocoderLaravel,          description: Geocoder for Laravel }
         - { name: geocoder-js,              description: GeocoderJS }
 ---
