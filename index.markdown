@@ -9,6 +9,7 @@ projects:
     -
         - { name: StackGeoIp,               description: StackGeoIp (Stack) }
         - { name: GeocoderServiceProvider,  description: GeocoderServiceProvider (Silex) }
+        - { name: GeocoderLaravel,          description: GeocoderServiceProvider (Laravel) }
         - { name: geocoder-js,              description: GeocoderJS }
 ---
 
