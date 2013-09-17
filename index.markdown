@@ -7,10 +7,10 @@ projects:
         - { name: GeocoderModule,           description: GeocoderModule (ZF2) }
         - { name: GeocodableBehavior,       description: GeocodableBehavior (Propel) }
     -
+        - { name: geocoder-js,              description: GeocoderJS }
         - { name: StackGeoIp,               description: StackGeoIp (Stack) }
         - { name: GeocoderServiceProvider,  description: Geocoder for Silex }
         - { name: GeocoderLaravel,          description: Geocoder for Laravel }
-        - { name: geocoder-js,              description: GeocoderJS }
 ---
 
 Geocoder
