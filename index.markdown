@@ -27,7 +27,7 @@ powerful API.
 [Google Maps](http://code.google.com/apis/maps/documentation/geocoding/),
 [Google Maps for Business](https://developers.google.com/maps/documentation/business/webservices),
 [Bing Maps](http://msdn.microsoft.com/en-us/library/ff701715.aspx),
-[OpenStreetMaps](http://nominatim.openstreetmap.org/),
+[OpenStreetMap](http://nominatim.openstreetmap.org/),
 [CloudMade](http://developers.cloudmade.com/projects/show/geocoding-http-api),
 [Geoip](http://php.net/manual/book.geoip.php),
 [MapQuest](http://open.mapquestapi.com/),
