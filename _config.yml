@@ -1,6 +1,6 @@
-pygments: true
-markdown: redcarpet
-exclude:  [ README.md, Gemfile ]
+highlighter: pygments
+markdown:    redcarpet
+exclude:     [ README.md, Gemfile ]
 
 name:        Geocoder
 description: The almost missing Geocoder PHP library!
