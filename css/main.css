@@ -182,13 +182,14 @@ footer {
 .ecg th,
 .ecg td {
     text-align: center;
+    width: 25%;
 }
 
-img.logo {
+img.header-logo {
     width: 250px;
 }
 
-img {
+img.logo {
     max-width: 100%;
 }
 

@@ -8,7 +8,7 @@ Logo
 You will find our logo in different formats below:
 
 <center>
-![](images/geocoder.png)
+<img src="images/geocoder.png" class="logo" />
 
 [Adobe Illustrator](https://raw.githubusercontent.com/geocoder-php/geocoder-php.github.io/master/res/Geocoder.ai)
 &nbsp;|&nbsp;
