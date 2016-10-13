@@ -63,18 +63,12 @@ Documentation
 
 Here are the links to the official and complete documentation pages:
 
-* [Geocoder documentation]({{ site.url }}Geocoder)
+* [Geocoder documentation]({{ site.url }}Geocoder)
 * [GeocodableBehavior documentation (Propel)]({{ site.url }}GeocodableBehavior)
 * [GeocoderBundle documentation (Symfony2)]({{ site.url }}BazingaGeocoderBundle)
 * [StackGeoIp documentation (Stack Middleware)]({{ site.url }}StackGeoIp)
 * [GeocoderServiceProvider documentation (Silex)]({{ site.url }}GeocoderServiceProvider)
 * [GeocoderLaravel documentation (Laravel 4)]({{ site.url }}GeocoderLaravel)
-
-
-Cookbook
---------
-
-In this cookbook, you will find specific solutions for specific needs.
 
 
 License
