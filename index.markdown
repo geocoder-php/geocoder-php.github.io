@@ -21,51 +21,54 @@ provides an abstraction layer for geocoding manipulations, as well as a
 powerful API.
 
 **Geocoder** supports a lot of third-party services such as:
-[FreeGeoIp](http://freegeoip.net/static/index.html),
-[HostIp](http://www.hostip.info/),
-[IpInfoDB](http://www.ipinfodb.com/),
+[ArcGIS Online](http://resources.arcgis.com/en/help/arcgis-online-geocoding-rest-api/).
+[Bing Maps](http://msdn.microsoft.com/en-us/library/ff701715.aspx),
+[Geonames](http://www.geonames.org/),
 [Google Maps](http://code.google.com/apis/maps/documentation/geocoding/),
 [Google Maps for Business](https://developers.google.com/maps/documentation/business/webservices),
-[Bing Maps](http://msdn.microsoft.com/en-us/library/ff701715.aspx),
-[OpenStreetMap](http://nominatim.openstreetmap.org/),
-[CloudMade](http://developers.cloudmade.com/projects/show/geocoding-http-api),
-[Geoip](http://php.net/manual/book.geoip.php),
 [MapQuest](http://open.mapquestapi.com/),
-[OIORest](http://geo.oiorest.dk/),
-[GeoCoder.ca](http://geocoder.ca/),
-[GeoCoder.us](http://geocoder.us/),
-[IGN OpenLS](http://www.ign.fr/),
-[DataScienceToolkit](http://www.datasciencetoolkit.org/),
-[Yandex](http://api.yandex.com.tr/maps/doc/geocoder/desc/concepts/About.xml),
-[GeoPlugin](http://www.geoplugin.com/webservices),
+[Mapzen](https://mapzen.com/documentation/search/),
+[OpenCage](http://geocoder.opencagedata.com/),
+[OpenStreetMap Nominatim](http://nominatim.openstreetmap.org/),
+[Yandex](http://api.yandex.com.tr/maps/doc/geocoder/desc/concepts/About.xml) and
+[TomTom](http://developer.tomtom.com/docs/read/Geocoding), as well as IP-to-geo services such as:
+[FreeGeoIp](http://freegeoip.net/static/index.html),
+[Geoip](http://php.net/manual/book.geoip.php),
 [GeoIPs](http://www.geoips.com/developer/geoips-api),
-[MaxMind web service](http://dev.maxmind.com/geoip/legacy/web-services),
-[MaxMind binary file](http://dev.maxmind.com/geoip/legacy/downloadable),
-[Geonames](http://www.geonames.org/),
-[IpGeoBase](http://ipgeobase.ru/),
-[Baidu](http://developer.baidu.com/map/geocoding-api.htm),
-[TomTom](http://developer.tomtom.com/docs/read/Geocoding),
-and
-[ArcGIS Online](http://resources.arcgis.com/en/help/arcgis-online-geocoding-rest-api/).
+[GeoIP2](https://www.maxmind.com/en/geoip2-databases),
+[GeoPlugin](http://www.geoplugin.com/webservices),
+[HostIp](http://www.hostip.info/),
+[IpInfoDB](http://www.ipinfodb.com/),
+[MaxMind web service](http://dev.maxmind.com/geoip/legacy/web-services) and
+[MaxMind binary file](http://dev.maxmind.com/geoip/legacy/downloadable)
 
+The **[Geocoder Extra](https://github.com/geocoder-php/geocoder-extra)** project also provides support for other third-party services including:
+[Baidu](http://developer.baidu.com/map/geocoding-api.htm),
+[DataScienceToolkit](http://www.datasciencetoolkit.org/),
+[Geocoder.ca](http://geocoder.ca/),
+[Geocoder.us](http://geocoder.us/),
+[Geocodio](http://geocod.io/),
+[Here](http://developer.here.com/rest-apis/documentation/geocoder/topics/overview.html),
+[IGN OpenLS](http://api.ign.fr/accueil),
+[ip2c](http://about.ip2c.org/),
+[IpGeoBase](http://ipgeobase.ru/),
+[IpInfo](http://ipinfo.io/developers),
+[Naver](http://developer.naver.com/wiki/pages/SrchAPI),
+[OGD Vienna](https://open.wien.at/site/datensatz/?id=c223b93a-2634-4f06-ac73-8709b9e16888),
+[OIORest](http://geo.oiorest.dk/) and
+[what3words](https://docs.what3words.com/api/v2/)
 
 Documentation
 -------------
 
 Here are the links to the official and complete documentation pages:
 
-* [Geocoder documentation]({{ site.url }}Geocoder)
+* [Geocoder documentation]({{ site.url }}Geocoder)
 * [GeocodableBehavior documentation (Propel)]({{ site.url }}GeocodableBehavior)
 * [GeocoderBundle documentation (Symfony2)]({{ site.url }}BazingaGeocoderBundle)
 * [StackGeoIp documentation (Stack Middleware)]({{ site.url }}StackGeoIp)
 * [GeocoderServiceProvider documentation (Silex)]({{ site.url }}GeocoderServiceProvider)
 * [GeocoderLaravel documentation (Laravel 4)]({{ site.url }}GeocoderLaravel)
-
-
-Cookbook
---------
-
-In this cookbook, you will find specific solutions for specific needs.
 
 
 License

@@ -1,5 +1,5 @@
-highlighter: pygments
-markdown:    redcarpet
+highlighter: rouge
+markdown:    kramdown
 exclude:     [ README.md, Gemfile ]
 
 name:        Geocoder
