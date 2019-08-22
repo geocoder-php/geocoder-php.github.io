@@ -6,8 +6,7 @@
         @include('_nav.menu', ['items' => $page->navigation])
     </nav>
     <div class="flex flex-col-reverse mb-10 lg:flex-row lg:mb-24">
-
-        <div class="mt-8">
+        <div class="mt-4">
             <h1 id="intro-docs-template">{{ $page->siteName }}</h1>
 
             <h2 id="intro-powered-by-jigsaw" class="font-light mt-4">{{ $page->siteDescription }}</h2>
@@ -32,7 +31,7 @@
         <div class="mb-8 mx-3 px-2 md:w-1/3">
             <img src="/assets/img/icon-window.svg" class="h-12 w-12" alt="window icon">
 
-            <h3 id="intro-laravel" class="text-2xl text-blue-darkest mb-0">30+ Swappable Providers</h3>
+            <h3 id="intro-swappable" class="text-2xl text-blue-darkest mb-0">30+ Swappable Providers</h3>
 
             <p>
                 Geocoder support a wide range of third-party services, providing a consistent, swappable interface for use in your projects.
@@ -42,7 +41,7 @@
         <div class="mb-8 mx-3 px-2 md:w-1/3">
             <img src="/assets/img/icon-terminal.svg" class="h-12 w-12" alt="terminal icon">
 
-            <h3 id="intro-markdown" class="text-2xl text-blue-darkest mb-0">Extensive Test Coverage</h3>
+            <h3 id="intro-tests" class="text-2xl text-blue-darkest mb-0">Extensive Test Coverage</h3>
 
             <p>
                 Geocoder has an extensive test suite with unit tests covering all of common logic, plus detailed integration tests for every provider.
@@ -52,7 +51,7 @@
         <div class="mx-3 px-2 md:w-1/3">
             <img src="/assets/img/icon-stack.svg" class="h-12 w-12" alt="stack icon">
 
-            <h3 id="intro-mix" class="text-2xl text-blue-darkest mb-0">Framework Support</h3>
+            <h3 id="intro-frameworks" class="text-2xl text-blue-darkest mb-0">Framework Support</h3>
 
             <p>
                 Geocoder has excellent frameworks integrations to implement in your project.

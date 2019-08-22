@@ -37,6 +37,9 @@
         @if ($page->docsearchApiKey && $page->docsearchIndexName)
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
         @endif
+
+        {{-- Website source: https://github.com/geocoder-php/geocoder-php.github.io --}}
+        {{-- Website by: https://github.com/atymic --}}
     </head>
 
     <body class="flex flex-col justify-between min-h-screen bg-grey-lightest text-grey-darkest leading-normal font-sans">
@@ -46,6 +49,16 @@
                     <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
                         <img class="h-8 md:h-10 mr-3" src="/assets/img/geocoder.png" alt="{{ $page->siteName }} logo" />
                     </a>
+                </div>
+
+
+                <div class="ml-10 hidden lg:block">
+                    <div>
+                        <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square" alt="Software License">
+                        <img alt="Travis (.org)" src="https://img.shields.io/travis/geocoder-php/Geocoder?style=flat-square">
+                        <img alt="Packagist" src="https://img.shields.io/packagist/dt/willdurand/geocoder?style=flat-square">
+                        <img alt="GitHub stars" src="https://img.shields.io/github/stars/geocoder-php/Geocoder?style=flat-square&logo=github">
+                    </div>
                 </div>
 
                 <div class="flex flex-1 justify-end items-center text-right md:pl-10">
@@ -73,8 +86,11 @@
                 <li class="md:mr-2">
                     This project is maintained by <a href="https://github.com/willdurand">William Durand</a> and
                     <a href="https://github.com/geocoder-php/?tab=members">
-                        awesome people
-                    </a><div class=""></div>
+                        awesome people.
+                    </a>
+                </li>
+                <li>
+                    Built with <a href="http://jigsaw.tighten.co" title="Jigsaw">Jigsaw</a>
                 </li>
             </ul>
         </footer>

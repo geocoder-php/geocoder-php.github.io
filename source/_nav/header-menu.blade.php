@@ -11,7 +11,6 @@
 
     <a title="{{ $page->siteName }} Github" href="{{ $page->repoUrl }}"
        class="ml-6 text-grey-darker hover:text-blue-600 {{ $page->isActive('/about') ? 'active text-blue-600' : '' }}">
-{{--        <img src="/assets/img/github.svg" alt="githubh logo" style="height: 2em" >--}}
         Github
     </a>
 </nav>

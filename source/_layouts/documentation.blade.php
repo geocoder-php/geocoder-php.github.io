@@ -7,7 +7,7 @@
             @include('_nav.menu', ['items' => $page->navigation])
         </nav>
 
-        <div class="w-full lg:w-3/5 break-words pb-16 lg:pl-4" v-pre>
+        <div class="w-full lg:w-2/3 break-words pb-16 lg:pl-4" v-pre>
             @yield('content')
         </div>
     </div>

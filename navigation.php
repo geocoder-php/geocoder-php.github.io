@@ -25,4 +25,7 @@ return [
     'Providers' => [
         'url' => 'docs#providers',
     ],
+    'Branding' => [
+        'url' => 'branding',
+    ],
 ];
