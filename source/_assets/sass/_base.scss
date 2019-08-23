@@ -128,3 +128,18 @@ pre {
         @apply .p-0;
     }
 }
+
+table {
+    @apply .w-full;
+
+    th, td {
+        @apply .p-2;
+        @apply .border;
+        @apply .border-solid;
+        @apply .border-grey-light;
+    }
+
+    thead th {
+        @apply .font-bold;
+    }
+}

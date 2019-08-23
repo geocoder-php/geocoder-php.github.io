@@ -778,6 +778,22 @@ pre code {
   padding: 0;
 }
 
+table {
+  width: 100%;
+}
+
+table th,
+table td {
+  padding: .5rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e2e8ee;
+}
+
+table thead th {
+  font-weight: 700;
+}
+
 .nav-menu {
   margin-top: -3rem;
   margin-left: -2rem;
