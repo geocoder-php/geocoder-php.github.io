@@ -13,10 +13,10 @@ Logo
 You will find our logo in different formats below:
 
 
-[Adobe Illustrator](https://raw.githubusercontent.com/geocoder-php/geocoder-php.github.io/master/res/Geocoder.ai)
+[Adobe Illustrator](/assets/branding/Geocoder.ai)
 &nbsp;|&nbsp;
-[SVG](https://raw.githubusercontent.com/geocoder-php/geocoder-php.github.io/master/res/Geocoder.svg)
+[SVG](/assets/branding/Geocoder.svg)
 &nbsp;|&nbsp;
-[PNG](https://raw.githubusercontent.com/geocoder-php/geocoder-php.github.io/master/res/Geocoder.png)
+[PNG](/assets/branding/Geocoder.png)
 
 
