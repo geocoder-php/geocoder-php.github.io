@@ -497,7 +497,7 @@ You're done.
 Credits
 -------
 
-* William Durand <william.durand1@gmail.com>
+* William Durand <will+git@drnd.me>
 * Tobias Nyholm <tobias.nyholm@gmail.com>
 * [All contributors](https://github.com/geocoder-php/Geocoder/contributors)
 
