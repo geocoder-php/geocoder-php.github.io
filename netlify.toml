@@ -3,3 +3,12 @@
 command = "npm run production"
 publish = "build_production"
 environment = { PHP_VERSION = "7.2" }
+
+# Redirect old docs page in case people have it bookmarked.
+[[redirects]]
+  from = "/Geocoder"
+  to = "/"
+
+[[redirects]]
+  from = "/GeocoderLaravel"
+  to = "/docs/#framework-integration"
