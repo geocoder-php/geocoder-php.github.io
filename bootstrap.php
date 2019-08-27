@@ -1,6 +1,9 @@
 <?php
 
+use App\Extend\DocumentationImporter;
+use App\Extend\GithubEmojiReplacer;
 use App\Listeners\GenerateSitemap;
+use GuzzleHttp\Client;
 use Mni\FrontYAML\Markdown\MarkdownParser;
 use TightenCo\Jigsaw\Jigsaw;
 use TightenCo\Jigsaw\Parsers\ParsedownExtraParser;
@@ -19,7 +22,7 @@ use TightenCo\Jigsaw\Parsers\ParsedownExtraParser;
  * });
  */
 
-$events->beforeBuild(\App\Extend\DocumentationImporter::class);
+$events->beforeBuild(DocumentationImporter::class);
 $events->afterCollections(\App\Extend\UpdateProviderNavigation::class);
 
 $events->afterBuild(GenerateSitemap::class);

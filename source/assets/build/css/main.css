@@ -835,6 +835,11 @@ table thead th {
   font-size: .925rem;
 }
 
+img.gh-emoji {
+  height: 1.5em;
+  vertical-align: middle;
+}
+
 .docsearch-input {
   background-image: url("/assets/img/magnifying-glass.svg");
   background-position: .8em;

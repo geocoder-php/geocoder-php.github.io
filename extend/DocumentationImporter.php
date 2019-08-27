@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace App\Extend;
 
+use GuzzleHttp\Client;
 use Symfony\Component\Process\Process;
 use TightenCo\Jigsaw\Jigsaw;
 
@@ -11,9 +12,17 @@ class DocumentationImporter
     const GIT_REPO_URL = 'https://github.com/geocoder-php/Geocoder.git';
     const CLONE_LOCATION = '/tmp/geocoder-build';
 
+    /** @var GithubEmojiReplacer */
+    private $emojiReplacer;
+
+    public function __construct()
+    {
+        $this->emojiReplacer = new GithubEmojiReplacer(new Client());
+    }
+
     public function handle(Jigsaw $jigsaw)
     {
-        if ($jigsaw->getEnvironment() !== 'production') {
+        if ($jigsaw->getEnvironment() !== 'production' && file_exists($jigsaw->getSourcePath() . '/docs/index.md')) {
             return;
         }
 
@@ -52,6 +61,8 @@ class DocumentationImporter
             'Geocoder'
         );
 
+        $content = $this->emojiReplacer->replace($content);
+
         $jigsaw->writeSourceFile('docs/index.md', $content);
     }
 
@@ -68,8 +79,9 @@ class DocumentationImporter
 
         foreach ($providerReadmeFiles as $fileName) {
             $provider = basename(dirname($fileName));
+            $file = $this->emojiReplacer->replace(file_get_contents($fileName));
 
-            $jigsaw->writeSourceFile(sprintf('docs/providers/%s.md', $provider), $this->withHeader(file_get_contents($fileName), $provider));
+            $jigsaw->writeSourceFile(sprintf('docs/providers/%s.md', $provider), $this->withHeader($file, $provider));
         }
     }
 
