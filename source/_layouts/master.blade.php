@@ -54,10 +54,18 @@
 
                 <div class="ml-10 hidden lg:block">
                     <div>
-                        <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square" alt="Software License">
-                        <img alt="Travis (.org)" src="https://img.shields.io/travis/geocoder-php/Geocoder?style=flat-square">
-                        <img alt="Packagist" src="https://img.shields.io/packagist/dt/willdurand/geocoder?style=flat-square">
-                        <img alt="GitHub stars" src="https://img.shields.io/github/stars/geocoder-php/Geocoder?style=flat-square&logo=github">
+                        <a href="https://github.com/geocoder-php/Geocoder/blob/master/LICENSE" target="_blank">
+                            <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square" alt="Software License">
+                        </a>
+                        <a href="http://travis-ci.org/geocoder-php/Geocoder" target="_blank">
+                            <img alt="Travis (.org)" src="https://img.shields.io/travis/geocoder-php/Geocoder?style=flat-square">
+                        </a>
+                        <a href="https://packagist.org/packages/willdurand/geocoder" target="_blank">
+                            <img alt="Packagist" src="https://img.shields.io/packagist/dt/willdurand/geocoder?style=flat-square">
+                        </a>
+                        <a href="https://github.com/geocoder-php/Geocoder" target="_blank">
+                            <img alt="GitHub stars" src="https://img.shields.io/github/stars/geocoder-php/Geocoder?style=flat-square&logo=github">
+                        </a>
                     </div>
                 </div>
 
