@@ -26,6 +26,6 @@ return [
         'url' => 'docs#providers',
     ],
     'Branding' => [
-        'url' => 'branding',
+        'url' => 'docs/branding',
     ],
 ];
