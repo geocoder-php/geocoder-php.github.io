@@ -13,6 +13,8 @@ class HeaderIdMarkdownParserExtension extends ParsedownExtra
             $Element['attributes']['id'] = str_replace(' ', '-', strtolower($Element['text']));
         }
 
+        // TODO: figure out why this double encoding is happening and fix it
+        // TODO: I think it's because jigsaw moved away from parsedown extra, but we still use it.
         if (isset($Element['text'])) {
             $Element['text'] = str_replace("{{'@'}}", '@', $Element['text']);
         }
