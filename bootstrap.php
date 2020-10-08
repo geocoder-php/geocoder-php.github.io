@@ -1,12 +1,8 @@
 <?php
 
 use App\Extend\DocumentationImporter;
-use App\Extend\GithubEmojiReplacer;
 use App\Listeners\GenerateSitemap;
-use GuzzleHttp\Client;
 use Mni\FrontYAML\Markdown\MarkdownParser;
-use TightenCo\Jigsaw\Jigsaw;
-use TightenCo\Jigsaw\Parsers\ParsedownExtraParser;
 
 /** @var $container \Illuminate\Container\Container */
 /** @var $events \TightenCo\Jigsaw\Events\EventBus */

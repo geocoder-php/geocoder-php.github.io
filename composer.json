@@ -4,7 +4,8 @@
         "tightenco/jigsaw-docs-template": "^1.0",
         "samdark/sitemap": "^2.2",
         "symfony/process": "^4.3",
-        "guzzlehttp/guzzle": "^6.3"
+        "guzzlehttp/guzzle": "^6.3",
+        "erusev/parsedown-extra": "^0.8.1"
     },
     "autoload": {
         "psr-4": {

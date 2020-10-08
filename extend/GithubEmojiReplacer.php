@@ -8,7 +8,7 @@ use Illuminate\Support\Str;
 
 class GithubEmojiReplacer
 {
-    const EMOJI_CODE_REGEX =  '/\:([a-zA-Z0-9-_+]+)\:/';
+    protected const EMOJI_CODE_REGEX =  '/\:([a-zA-Z0-9-_+]+)\:/';
 
     /** @var Client */
     private $client;
@@ -31,7 +31,7 @@ class GithubEmojiReplacer
         );
     }
 
-    private function getEmojiHtml(array $emojis, string $code)
+    private function getEmojiHtml(array $emojis, string $code): ?string
     {
         if (!isset($emojis[$code])) {
             return null;

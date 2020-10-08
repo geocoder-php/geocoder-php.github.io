@@ -92,13 +92,11 @@
         <footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
             <ul class="flex flex-col md:flex-row justify-center list-reset">
                 <li class="md:mr-2">
-                    This project is maintained by <a href="https://github.com/willdurand">William Durand</a> and
-                    <a href="https://github.com/geocoder-php/?tab=members">
-                        awesome people.
-                    </a>
+                    This project is maintained by the <a href="https://github.com/geocoder-php/?tab=members">awesome people.</a>
+
                 </li>
-                <li>
-                    Built with <a href="http://jigsaw.tighten.co" title="Jigsaw">Jigsaw</a>
+                <li class="text-xs">
+                    Website by <a href="https://atymic.dev">atymic</a>
                 </li>
             </ul>
         </footer>
