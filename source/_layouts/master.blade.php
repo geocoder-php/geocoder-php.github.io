@@ -90,9 +90,9 @@
         @stack('scripts')
 
         <footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
-            <ul class="flex flex-col md:flex-row justify-center list-reset">
+            <ul class="flex flex-col md:flex-row items-center justify-center list-reset">
                 <li class="md:mr-2">
-                    This project is maintained by the <a href="https://github.com/geocoder-php/?tab=members">awesome people.</a>
+                    This project is maintained by these <a href="https://github.com/geocoder-php/?tab=members">awesome people.</a>
 
                 </li>
                 <li class="text-xs">

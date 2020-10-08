@@ -12,5 +12,10 @@
             "App\\Extend\\": "extend/",
             "App\\Listeners\\": "listeners/"
         }
+    },
+    "config": {
+        "platform": {
+            "php": "7.2.33"
+        }
     }
 }

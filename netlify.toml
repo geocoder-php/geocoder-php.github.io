@@ -1,8 +1,8 @@
 [build]
 
-command = "composer install && npm run production"
+command = "npm run production"
 publish = "build_production"
-environment = { PHP_VERSION = "7.3" }
+environment = { PHP_VERSION = "7.2" }
 
 # Redirect old docs page in case people have it bookmarked.
 [[redirects]]
