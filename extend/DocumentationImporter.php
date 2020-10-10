@@ -9,8 +9,8 @@ use TightenCo\Jigsaw\Jigsaw;
 
 class DocumentationImporter
 {
-    const GIT_REPO_URL = 'https://github.com/geocoder-php/Geocoder.git';
-    const CLONE_LOCATION = '/tmp/geocoder-build';
+    public const GIT_REPO_URL = 'https://github.com/geocoder-php/Geocoder.git';
+    public const CLONE_LOCATION = '/tmp/geocoder-build';
 
     /** @var GithubEmojiReplacer */
     private $emojiReplacer;
@@ -20,7 +20,7 @@ class DocumentationImporter
         $this->emojiReplacer = new GithubEmojiReplacer(new Client());
     }
 
-    public function handle(Jigsaw $jigsaw)
+    public function handle(Jigsaw $jigsaw): void
     {
         if ($jigsaw->getEnvironment() !== 'production' && file_exists($jigsaw->getSourcePath() . '/docs/index.md')) {
             return;
@@ -38,7 +38,7 @@ class DocumentationImporter
         $this->updateProvidersDocumentation($jigsaw);
     }
 
-    protected function cloneRepo()
+    protected function cloneRepo(): bool
     {
         $updateCommand = new Process(['git', 'clone', self::GIT_REPO_URL, self::CLONE_LOCATION, '--branch', 'master']);
         $updateCommand->run();
@@ -46,7 +46,7 @@ class DocumentationImporter
         return $updateCommand->isSuccessful();
     }
 
-    protected function updateRepo()
+    protected function updateRepo(): bool
     {
         $updateCommand = new Process(['git', 'pull', 'origin', 'master'], self::CLONE_LOCATION);
         $updateCommand->run();
@@ -54,7 +54,7 @@ class DocumentationImporter
         return $updateCommand->isSuccessful();
     }
 
-    public function updateMainDocumentation(Jigsaw $jigsaw)
+    public function updateMainDocumentation(Jigsaw $jigsaw): void
     {
         $content = $this->withHeader(
             file_get_contents(self::CLONE_LOCATION . '/README.md'),
@@ -66,7 +66,7 @@ class DocumentationImporter
         $jigsaw->writeSourceFile('docs/index.md', $content);
     }
 
-    public function updateProvidersDocumentation(Jigsaw $jigsaw)
+    public function updateProvidersDocumentation(Jigsaw $jigsaw): void
     {
         $providerFiles = glob(sprintf('%s/src/Provider/*/*.md', self::CLONE_LOCATION));
         $providerReadmeFiles = preg_grep('/README.md$/i', $providerFiles);

@@ -1,10 +1,9 @@
 <?php
+declare(strict_types=1);
 
 namespace App\Extend;
 
-use App\Extend\HeaderIdMarkdownParserExtension;
 use Mni\FrontYAML\Markdown\MarkdownParser;
-use ParsedownExtra;
 
 class HeaderIdMarkdownParser implements MarkdownParser
 {

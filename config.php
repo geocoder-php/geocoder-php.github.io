@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Str;
+
 $repoUrl = 'https://github.com/geocoder-php/Geocoder';
 
 return [
@@ -18,7 +20,7 @@ return [
 
     // helpers
     'isActive' => function ($page, $path) {
-        return ends_with(trimPath($page->getPath()), trimPath($path));
+        return Str::endsWith(trimPath($page->getPath()), trimPath($path));
     },
     'isActiveParent' => function ($page, $menuItem) {
         if (is_object($menuItem) && $menuItem->children) {
@@ -28,6 +30,6 @@ return [
         }
     },
     'url' => function ($page, $path) {
-        return starts_with($path, 'http') ? $path : '/' . trimPath($path);
+        return Str::startsWith($path, 'http') ? $path : '/' . trimPath($path);
     },
 ];
