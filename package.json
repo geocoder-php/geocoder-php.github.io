@@ -17,7 +17,7 @@
         "highlight.js": "^9.13.1",
         "laravel-mix": "^4.1.4",
         "laravel-mix-purgecss": "^4.2.0",
-        "node-cmd": "^3.0.0",
+        "node-cmd": "^5.0.0",
         "sass": "^1.58.3",
         "sass-loader": "^7.3.1",
         "tailwindcss": "^0.7.4",
