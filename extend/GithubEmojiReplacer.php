@@ -42,7 +42,7 @@ class GithubEmojiReplacer
 
     private function getGithubEmojis(): array
     {
-        $cachePath = __DIR__ . '/../.cache/gh-emoji.json';
+        $cachePath = __DIR__ . '/../cache/gh-emoji.json';
 
         if (file_exists($cachePath)) {
             return json_decode(file_get_contents($cachePath), true);
